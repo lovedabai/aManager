@@ -13,6 +13,7 @@ public class CommonController {
 	@RequestMapping("/error")
 	@ResponseBody
 	private String error(){
+		
 		return VIEW + "error";
 	}
 
