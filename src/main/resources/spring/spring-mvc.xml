@@ -35,6 +35,44 @@
            </bean>
 	    </mvc:message-converters>
 	</mvc:annotation-driven>
+	
+	<mvc:interceptors>
+	    <mvc:interceptor>
+	        <mvc:mapping path="/**"/>
+	        <mvc:exclude-mapping path="/api/**" />
+	        <mvc:exclude-mapping path="/static/**"/>
+	        <bean class="com.huchao.common.interceptor.CommonInterceptor"></bean>
+	    </mvc:interceptor>
+	   <!--  <mvc:interceptor>
+	        <mvc:mapping path="/**"/>
+	        <mvc:exclude-mapping path="/api/**" />
+	        <mvc:exclude-mapping path="/static/**"/>
+	        <bean class="cn.finalist.order.manager.common.interceptor.ILogInterceptor"></bean>
+	    </mvc:interceptor>
+	    <mvc:interceptor>
+	        <mvc:mapping path="/**"/>
+	        <mvc:exclude-mapping path="/api/**" />
+	        <mvc:exclude-mapping path="/static/**"/>
+	        <bean class="cn.finalist.order.manager.common.interceptor.SecureInterceptor">
+	            <property name="secureUrl" value="/, /member"/>
+	        </bean>
+	    </mvc:interceptor> -->
+	</mvc:interceptors>
+
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="50000000" />
+		<property name="maxInMemorySize" value="50000000" />
+	</bean>
+    
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.freemarker.FreeMarkerView" />
+		<property name="suffix" value=".ftl" />  
+        <property name="contentType" value="text/html;charset=UTF-8" />  
+        <property name="exposeRequestAttributes" value="true" />  
+        <property name="exposeSessionAttributes" value="true" />  
+        <property name="exposeSpringMacroHelpers" value="true" />  
+	</bean>
 
 
 	<bean
