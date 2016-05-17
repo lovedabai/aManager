@@ -33,6 +33,7 @@
 		<property name="username" value="${jdbc.username}" />
 		<property name="password" value="${jdbc.password}" />
 	</bean>
+	
 
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
@@ -46,7 +47,7 @@
 				<prop key="hibernate.jdbc.batch_size">${hibernate.jdbc.batch_size}</prop>
 			</props>
 		</property>
-		<property name="packagesToScan" value="cn.huchao.order.extract.**.entity" />
+		<property name="packagesToScan" value="com.huchao.common.entity" />
 		<property name="namingStrategy">
 			<bean class="com.huchao.common.hibernate.CustNamingStrategy" />
 		</property>

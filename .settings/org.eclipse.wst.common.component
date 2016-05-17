@@ -5,8 +5,8 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/filters"/>
-        <property name="context-root" value="aManager"/>
         <property name="java-output-path" value="/aManager/target/classes"/>
         <property name="component.exclusion.patterns" value="src/main/webapp/WEB-INF/web.xml"/>
+        <property name="context-root" value="aManager"/>
     </wb-module>
 </project-modules>
