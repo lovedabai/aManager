@@ -1,0 +1,64 @@
+1.阿里云控制台 hc875685692 hc3632928
+
+2.云服务器 登陆root Hc3632928
+
+3.mysql :gitlab gitlab 登陆
+       root  hc3632928
+
+4.gitlab 控制台登陆账号
+	login.........admin@local.host   / root
+	password......5iveL!fe hc3632928
+
+5.github
+  875685692@qq.com
+	hc3632928
+
+
+6.WordPress 博客主题
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.java 基础  (base \ jms \ jndi \ jta \ jax \ nio \ thread  )
+  jvm 
+  java框架  （spring  \ hibernate \ mina \ dubbo \ netty）
+  js 
+  node   
+  sql
+  数据结构、算法
+
+2.git 
+  maven
+  nginx
+  http （协议）(http \ rest \ web service \ hession \ rpc )
+  linux   shell
+  soa
+  bio nio aio
+ 
+
+3.服务器性能，大数据性能
+
+4.本地搭建git服务器，提交代码，自动部署
